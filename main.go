@@ -39,9 +39,9 @@ var (
 		Help: "Battery Charge Cycle Count",
 	})
 	MetricsMap = map[string]prometheus.Gauge{
-		"energy_now":         energyNow,
-		"energy_full":        energyFull,
-		"energy_full_design": energyFullDesign,
+		"charge_now":         energyNow,
+		"charge_full":        energyFull,
+		"charge_full_design": energyFullDesign,
 	}
 )
 
