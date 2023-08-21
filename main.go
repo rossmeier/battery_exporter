@@ -39,9 +39,13 @@ var (
 		Help: "Battery Charge Cycle Count",
 	})
 	MetricsMap = map[string]prometheus.Gauge{
+		// some drivers/kernel versions use charge, others energy
 		"charge_now":         energyNow,
 		"charge_full":        energyFull,
 		"charge_full_design": energyFullDesign,
+		"energy_now":         energyNow,
+		"energy_full":        energyFull,
+		"energy_full_design": energyFullDesign,
 	}
 )
 
@@ -103,7 +107,7 @@ func main() {
 		w.Write([]byte(`<html>
 <head><title>Exporter v` + BuildVersion + `</title></head>
 <body>
-<h1>Redis Exporter ` + BuildVersion + `</h1>
+<h1>Battery Exporter ` + BuildVersion + `</h1>
 <p><a href='/metrics'>Metrics</a></p>
 </body>
 </html>
