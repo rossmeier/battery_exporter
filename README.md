@@ -1,3 +1,6 @@
+# Archived, do not use anymore
+Prometheus' [node_exporter](https://github.com/prometheus/node_exporter) provides the same features with the `powersupplyclass` collector.
+
 # Battery Exporter
 
 Battery Exporter for Prometheus, you can use this exporter to monitor your battery infomation include:
